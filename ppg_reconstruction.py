@@ -228,7 +228,7 @@ def reconstruction(
 
     # Load GAN model parameters
     generator = torch.load(os.path.join(
-        MODEL_PATH, GAN_MODEL_FILE_NAME), map_location=torch.device('cpu'))
+        MODEL_PATH, GAN_MODEL_FILE_NAME), map_location=torch.device('cpu'), weights_only=False)
     device = torch.device(
         "cuda:0" if torch.cuda.is_available() else "cpu")
 
