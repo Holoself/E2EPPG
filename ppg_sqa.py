@@ -6,14 +6,14 @@ from typing import Tuple, List
 from scipy import stats, signal
 import more_itertools as mit
 import joblib
-from utils import normalize_data, get_data, bandpass_filter, find_peaks, resample_signal
+from .utils import normalize_data, get_data, bandpass_filter, find_peaks, resample_signal
 import warnings
 import numpy as np
 
 
 warnings.filterwarnings("ignore")
 
-MODEL_PATH = "models"
+MODEL_PATH = os.path.join(os.path.dirname(__file__), "models")
 SCALER_FILE_NAME = "Train_data_scaler.save"
 SQA_MODEL_FILE_NAME = 'OneClassSVM_model.sav'
 SQA_MODEL_SAMPLING_FREQUENCY = 20

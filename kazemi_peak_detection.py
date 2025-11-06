@@ -3,9 +3,9 @@
 import numpy as np
 from tensorflow import keras
 import os
-from utils import resample_signal
+from .utils import resample_signal
 
-MODEL_PATH = "models"
+MODEL_PATH = os.path.join(os.path.dirname(__file__), "models")
 PEAK_DETECTION_MODEL_DIR = "kazemi_peak_detection_model"
 
 KAZEMI_MODEL_SAMPLING_FREQUENCYPLING_FREQUENCY = 100

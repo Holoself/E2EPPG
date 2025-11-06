@@ -10,8 +10,8 @@ from scipy.signal import resample
 import torch
 from torch import nn
 import __main__
-from utils import find_peaks, resample_signal, get_data, bandpass_filter
-from ppg_sqa import sqa
+from .utils import find_peaks, resample_signal, get_data, bandpass_filter
+from .ppg_sqa import sqa
 import more_itertools as mit
 
 warnings.filterwarnings("ignore")
@@ -24,7 +24,7 @@ UPSAMPLING_RATE = 2
 
 RECONSTRUCTION_MODEL_SAMPLING_FREQUENCY = 20
 
-MODEL_PATH = "models"
+MODEL_PATH = os.path.join(os.path.dirname(__file__), "models")
 GAN_MODEL_FILE_NAME = 'GAN_model.pth'
 
 #Define the device

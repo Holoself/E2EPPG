@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 
 import warnings
-from utils import get_data
-from ppg_sqa import sqa
-from ppg_reconstruction import reconstruction
-from ppg_clean_extraction import clean_seg_extraction
-from ppg_peak_detection import peak_detection
+from .utils import get_data
+from .ppg_sqa import sqa
+from .ppg_reconstruction import reconstruction
+from .ppg_clean_extraction import clean_seg_extraction
+from .ppg_peak_detection import peak_detection
 import neurokit2 as nk
 import pandas as pd
 import numpy as np

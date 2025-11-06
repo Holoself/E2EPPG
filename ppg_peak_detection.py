@@ -5,11 +5,11 @@ import heartpy as hp
 from heartpy.datautils import rolling_mean
 import numpy as np
 from scipy import signal
-from kazemi_peak_detection import ppg_peaks
-from ppg_sqa import sqa
-from ppg_reconstruction import reconstruction
-from ppg_clean_extraction import clean_seg_extraction
-from utils import normalize_data, get_data
+from .kazemi_peak_detection import ppg_peaks
+from .ppg_sqa import sqa
+from .ppg_reconstruction import reconstruction
+from .ppg_clean_extraction import clean_seg_extraction
+from .utils import normalize_data, get_data
 
 import warnings
 warnings.filterwarnings("ignore")

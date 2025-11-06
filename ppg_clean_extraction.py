@@ -3,9 +3,9 @@
 import warnings
 import pandas as pd
 import numpy as np
-from utils import get_data
-from ppg_sqa import sqa
-from ppg_reconstruction import reconstruction
+from .utils import get_data
+from .ppg_sqa import sqa
+from .ppg_reconstruction import reconstruction
 warnings.filterwarnings("ignore")
 
 def clean_seg_extraction(
